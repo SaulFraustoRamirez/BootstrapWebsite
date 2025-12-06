@@ -1,0 +1,177 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1em 2em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.logoDiv {
+  margin-bottom: 0.5em;
+}
+
+.centered-img {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: none;
+  border: 0;
+}
+
+.logoImg {
+  width: 120px;
+  height: auto;
+  background-color: black;
+  padding: 10px;
+}
+
+img.artfinder {
+  width: 160px;
+  height: auto;
+  background-color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 0;
+  margin: 1em 0 0 0;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+th {
+  background-color: #f0f0f0;
+  font-family: Georgia, serif;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+.serif {
+  font-family: Georgia, serif;
+}
+
+.mono {
+  font-family: 'Courier New', monospace;
+}
+
+footer {
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 1em;
+  margin-top: 40px;
+}
+
+/* Subscribe form */
+.subscribe {
+  margin: 20px 0;
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+.subscribe input[type="email"]:focus {
+  border-color: #666;
+  outline: none;
+}
+
+.subscribe button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe button:hover {
+  background-color: #666;
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  table, tr, td, th {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  .centered-img {
+    width: 100px;
+  }
+
+  .logoImg {
+    width: 90px;
+  }
+}
